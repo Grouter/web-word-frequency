@@ -1,7 +1,5 @@
 # web-word-frequency
 
-## No GUI
-
 Required libs:
   * urllib
   * bs4
