@@ -1,4 +1,4 @@
-import urllib
+import urllib.request
 from bs4 import BeautifulSoup
 
 unwanted_spc = ['.', ',', ':', '/', '<', '>', '=', '\n']
@@ -29,10 +29,7 @@ class FreqSearch:
     def _freq(self, text_str):
         frq = {}
         for word in [w for w in text_str.split() if len(w) > 1]:
-            if not frq.get(word):
-                frq[word] = 1
-            else:
-                frq[word] += 1
+            frq[word] = frq.setdefault(word, 0) + 1
         return frq
 
     def _readable(self, word_dict):
