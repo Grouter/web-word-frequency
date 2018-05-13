@@ -1,5 +1,5 @@
-from Search import FreqSearch
-from Visualization import FqVis
+from src.search import FreqSearch
+from src.visualization import FqVis
 
 Search = FreqSearch()
 Search.process("https://github.com/", 20)
