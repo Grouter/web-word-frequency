@@ -1,9 +1,6 @@
 import urllib.request
 from bs4 import BeautifulSoup
 
-unwanted_spc = ['.', ',', ':', '/', '<', '>', '=', '\n']
-unwanted = ['(', ')', '{', '}', '[', ']', "'", '"', '“', '„', ';', '?', '!', '|']
-
 
 class FreqSearch:
     def __init__(self):
